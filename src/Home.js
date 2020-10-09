@@ -17,7 +17,14 @@ class Home extends Component {
                     <Link to="/listAll">
           <button className="ui red button">All Works</button>
                     </Link>
+                    </Switch> 
+                <Switch>
+                    <Link to ="/create">
+          <button className="ui green button">Create</button>
+
+                    </Link>
                 </Switch>
+
             </div>
         )
     }

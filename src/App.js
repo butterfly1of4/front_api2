@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Link, Redirect, Switch } from "react-router-dom";
 import ListAll from "./components/ListAll"
 import Home from "./Home"
-
+import CreateNew from "./components/CreateNew"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 //GET REQUESTS
@@ -67,7 +67,7 @@ class App extends Component {
             <Home />
           <Switch>
           <Route exact path="/listAll" component={ListAll} />
-
+          <Route exact path="/create" component={CreateNew} />
           </Switch>
         </main>
       </div>
