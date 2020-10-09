@@ -32,7 +32,7 @@ class CreateNew extends Component{
 create = (e) => {
     e.preventDefault()
     const formData = {
-        title: document.querySelector(".input").value
+        title: document.querySelector("input").value
     }
     const optionPOST = {
         method: "POST",

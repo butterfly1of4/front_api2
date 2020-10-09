@@ -24,6 +24,12 @@ class Home extends Component {
 
                     </Link>
                 </Switch>
+                <Switch>
+                    <Link to="/update">
+          <button className="ui blue button">Update</button>
+
+                    </Link>
+                </Switch>
 
             </div>
         )
