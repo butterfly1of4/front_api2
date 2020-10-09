@@ -31,8 +31,14 @@ const optionGET = {
           return(
             <div className="container">
               <>
-              <div className="title" key={item}>
-                {item.title}
+              <div className="entry" key={item}>
+                {item.title},
+                {/* {item.classification},
+                {item.url},
+                {item.century},
+                {item.culture},
+                {item.medium}, */}
+                {item.primaryimageurl}
                 
               </div>
               </>
