@@ -30,7 +30,12 @@ class Home extends Component {
 
                     </Link>
                 </Switch>
+                <Switch>
+                    <Link to="/delete">
+          <button className="ui black button">Delete</button>
 
+                    </Link>
+                </Switch>
             </div>
         )
     }

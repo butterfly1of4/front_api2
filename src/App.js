@@ -5,7 +5,7 @@ import ListAll from "./components/ListAll"
 import Home from "./Home"
 import CreateNew from "./components/CreateNew"
 import Update from "./components/Update"
-
+import Delete from "./components/Delete"
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 //GET REQUESTS
 
@@ -69,7 +69,8 @@ class App extends Component {
           <Switch>
           <Route exact path="/listAll" component={ListAll} />
           <Route exact path="/create" component={CreateNew} />
-          <Route exact pat="/update" component={Update} />
+          <Route exact path="/update" component={Update} />
+          <Route exact path="/delete" component={Delete} />
           </Switch>
         </main>
       </div>
