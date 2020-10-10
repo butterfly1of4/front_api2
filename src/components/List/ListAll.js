@@ -36,6 +36,8 @@ const optionGET = {
              <br />
 
                <span>{item.classification},
+               </span><br />
+               <span>
                 {item.url},
                 <br />
                 </span>
@@ -50,7 +52,7 @@ const optionGET = {
                 <span>
                 {item.medium},</span> 
                 <br />
-                <span>{item.primaryimageurl}</span>
+                <span><a targer="_blank" href="">{item.primaryimageurl}</a></span>
                 <hr className="entryDivider"></hr>
                 <br />
               </div>

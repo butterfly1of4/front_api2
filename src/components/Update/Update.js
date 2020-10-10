@@ -33,12 +33,13 @@ class Update extends Component {
           if(item.title === this.props.match.params.title){
               return (
                   <React.Fragment>
-                      {/* <div className="list">{list}</div> */}
+                   
                       <form onSubmit={this.update}>
                           <input type="text" placeholder="Update"></input>
                           <input type="submit"></input>
                       </form>
               <p>{item.title}</p>
+              <div className="list">{list}</div>
                   </React.Fragment>
 
               )

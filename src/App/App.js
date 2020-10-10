@@ -72,6 +72,17 @@ class App extends Component {
           <div className="introduction">
             <h1 className="hello">Welcome to the Harvard Art API list</h1>
             <h4 className="about">Here you can find a small list of the works in the art collection of Harvard.</h4>
+            <p className="model">Here is the format for the information retrieved: <br />
+            <ul className="modelList">
+              <li className="modelitem">Title </li>
+              <li className="modelitem">Classification</li>
+              <li className="modelitem">Work URL</li>
+              <li className="modelitem">Century </li>
+              <li className="modelitem">Culture</li>
+              <li className="modelitem">Medium</li>
+              <li className="modelitem">Primary Image URL</li>
+            </ul>
+             </p>
           </div>
           {/* {this.state.list} */}
             <Home />
