@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import App from "../../App/App"
 import {Link } from "react-router-dom"
-
+import "../List/List.css"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 const optionGET = {
@@ -32,14 +32,27 @@ const optionGET = {
             <div className="container">
               <>
               <div className="entry" key={item}>
-                {item.title},
-                {/* {item.classification},
+             {item.title},
+             <br />
+
+               <span>{item.classification},
                 {item.url},
+                <br />
+                </span>
+                <span>
                 {item.century},
+                <br />
+                </span>
+                <span>
                 {item.culture},
-                {item.medium}, */}
-                {item.primaryimageurl}
-                
+                <br />
+                </span>
+                <span>
+                {item.medium},</span> 
+                <br />
+                <span>{item.primaryimageurl}</span>
+                <hr className="entryDivider"></hr>
+                <br />
               </div>
               </>
             </div>
@@ -50,7 +63,7 @@ const optionGET = {
           return (
             <div className="list">
               {list}
-              console.log(list)
+              {/* console.log(list) */}
             </div>
           )
       }
