@@ -1,18 +1,30 @@
-* {
+body {
     box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
   }
+
+.logo {
+  height: 7em;
   
-  nav {
-    background-color: darkslateblue;
+  margin-right: 35%;
+}
+.welcome {
+  color: white;
+  font-family: 'EB Garamond', serif;
+  
+  display: flex;
+  flex-direction: row;
+}
+.navWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+ nav {
+    background-color: #9F1D2E;
     width: 100vw;
-    height: 6em;
+    height: 8em;
     color: white;
     display: block;
    padding: auto;
-  }
-  
-  .h1 {
-    margin-top: 6em;
-    color: white;
-    background-color: darkslateblue;
   }

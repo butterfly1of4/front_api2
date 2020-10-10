@@ -42,7 +42,7 @@ class Delete extends Component {
                     <div className="title" kye={item}>
                         {item.title}
                     </div>
-                    <img src={item.image} />
+                    <img src={item.primanyimageurl} />
                     <div className="button-class"><button className="delete" onClick={(e) => {
                         this.remove(item.title)
                     }}></button>{" "}

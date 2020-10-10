@@ -6,6 +6,8 @@ import Home from "./Home"
 import CreateNew from "./components/CreateNew"
 import Update from "./components/Update"
 import Delete from "./components/Delete"
+import Logo from "./assets/harvard_shield_wreath.png"
+
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 //GET REQUESTS
 
@@ -59,15 +61,19 @@ class App extends Component {
     return(
       <div>
         <nav>
+        <div className="navWrapper">
+        <img src={Logo} className="logo"/>
           <Link to='/'>
-          <h1>Harvard Art API</h1>
+          <h1 className="welcome">Harvard Art API</h1>
           </Link>
+        </div>
         </nav>
         <main>
           {/* {this.state.list} */}
             <Home />
           <Switch>
           <Route exact path="/listAll" component={ListAll} />
+          {/* <Route exact path="/search" component={Search} /> */}
           <Route exact path="/create" component={CreateNew} />
           <Route exact path="/update" component={Update} />
           <Route exact path="/delete" component={Delete} />
