@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import App from "../App"
+import App from "../../App/App"
 import {Link } from "react-router-dom"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";

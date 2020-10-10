@@ -1,21 +1,27 @@
 import React, {Component} from "react"
 import { Route, Link, Switch } from "react-router-dom";
-import "./App"
+import "../App/App"
 import { Button, FormField } from "semantic-ui-react";
-import ListAll from "./components/ListAll"
+import HomeStyle from "./Home.css"
+
 
 
 class Home extends Component {
     constructor(){
         super()
-        this.state ={}
+        this.state ={
+            clicked: false
+        }
     }
+    
     render(){
+
         return(
             <div>
+                <div className="butttonWrapper">
                 <Switch>
                     <Link to="/listAll">
-          <button className="ui red button">All Works</button>
+          <button className="ui orange button">All Works</button>
                     </Link>
                     </Switch> 
                 <Switch>
@@ -36,6 +42,7 @@ class Home extends Component {
 
                     </Link>
                 </Switch>
+                </div>
             </div>
         )
     }

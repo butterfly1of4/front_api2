@@ -5,8 +5,8 @@ body {
 
 .logo {
   height: 7em;
-  
-  margin-right: 35%;
+  padding-left: 3em;
+  margin-right: 33%;
 }
 .welcome {
   color: white;

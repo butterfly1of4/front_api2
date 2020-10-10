@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
 import { Route, Link, Redirect, Switch } from "react-router-dom";
-import ListAll from "./components/ListAll"
-import Home from "./Home"
-import CreateNew from "./components/CreateNew"
-import Update from "./components/Update"
-import Delete from "./components/Delete"
-import Logo from "./assets/harvard_shield_wreath.png"
+import ListAll from "../components/List/ListAll.js"
+import Home from "../Home/Home"
+import CreateNew from "../components/Create/CreateNew.js"
+import Update from "../components/Update/Update.js"
+import Delete from "../components/Delete/Delete.js"
+import Logo from "../assets/harvard_shield_wreath.png"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 //GET REQUESTS
