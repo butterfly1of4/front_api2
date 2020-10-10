@@ -63,12 +63,16 @@ class App extends Component {
         <nav>
         <div className="navWrapper">
         <img src={Logo} className="logo"/>
-          <Link to='/'>
+          <Link id="navTitle" to='/'>
           <h1 className="welcome">Harvard Art API</h1>
           </Link>
         </div>
         </nav>
         <main>
+          <div className="introduction">
+            <h1 className="hello">Welcome to the Harvard Art API list</h1>
+            <h4 className="about">Here you can find a small list of the works in the art collection of Harvard.</h4>
+          </div>
           {/* {this.state.list} */}
             <Home />
           <Switch>

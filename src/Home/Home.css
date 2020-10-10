@@ -1,0 +1,15 @@
+
+a {
+    padding: 1em;
+    margin-top: 4vh;
+}
+.buttonWrapper{
+    width: 98vw;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: 2px black solid;
+    
+}

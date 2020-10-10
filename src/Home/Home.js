@@ -1,8 +1,9 @@
 import React, {Component} from "react"
 import { Route, Link, Switch } from "react-router-dom";
 import "../App/App"
+import "../Home/Home.css"
 import { Button, FormField } from "semantic-ui-react";
-import HomeStyle from "./Home.css"
+
 
 
 
@@ -18,12 +19,17 @@ class Home extends Component {
 
         return(
             <div>
-                <div className="butttonWrapper">
+                <div className="buttonWrapper">
                 <Switch>
                     <Link to="/listAll">
           <button className="ui orange button">All Works</button>
                     </Link>
                     </Switch> 
+                <Switch>
+                    <Link to="/search">
+          <button className="ui yellow button">Search</button>
+                    </Link>
+                    </Switch>       
                 <Switch>
                     <Link to ="/create">
           <button className="ui green button">Create</button>
