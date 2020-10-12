@@ -21,6 +21,7 @@ class CreateNew extends Component{
     render (){
         return(
             <div>
+                
             <form onSubmit={this.create}>
                 <input type="text" placeholder="Create New" />
                 <input type="submit" />

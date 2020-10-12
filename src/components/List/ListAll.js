@@ -52,7 +52,7 @@ const optionGET = {
                 <span>
                 {item.medium},</span> 
                 <br />
-                <span><a targer="_blank" href="">{item.primaryimageurl}</a></span>
+                <span><a target="_blank" href="">{item.primaryimageurl}</a></span>
                 <hr className="entryDivider"></hr>
                 <br />
               </div>
