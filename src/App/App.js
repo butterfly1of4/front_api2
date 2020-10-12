@@ -6,6 +6,7 @@ import Home from "../Home/Home"
 import CreateNew from "../components/Create/CreateNew.js"
 import Update from "../components/Update/Update.js"
 import Delete from "../components/Delete/Delete.js"
+import Search from "../components/Search/Search.js"
 import Logo from "../assets/harvard_shield_wreath.png"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
@@ -88,7 +89,7 @@ class App extends Component {
             <Home />
           <Switch>
           <Route exact path="/listAll" component={ListAll} />
-          {/* <Route exact path="/search" component={Search} /> */}
+          <Route exact path="/search" component={Search} />
           <Route exact path="/create" component={CreateNew} />
           <Route exact path="/update" component={Update} />
           <Route exact path="/delete" component={Delete} />
@@ -102,7 +103,7 @@ class App extends Component {
     fetch(
     hostURL,
     optionGET
-    // DeleteOne, GetOne, PutUpdate, post
+    ,optionDELETE, optionPOST, optionPUT
   )
  
     .then((res) => res.json())

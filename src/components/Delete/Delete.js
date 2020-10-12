@@ -39,7 +39,7 @@ class Delete extends Component {
         let list= this.state.works.map((item) => {
             return(
                 <div className="container">
-                    <div className="title" kye={item}>
+                    <div className="title" key={item}>
                         {item.title}
                     </div>
                     

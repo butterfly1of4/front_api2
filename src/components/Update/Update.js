@@ -16,8 +16,11 @@ class Update extends Component {
     constructor(props){
       super(props)
       this.state = {
-        works: []
+        works: [],
+        entry: ''
       }
+      // this.handleChange = this.handleChange.bind(this)
+      // this.handleSubmit = this.handleSubmit.bind(this)
     }//constructor
   
   componentWillMount() {
@@ -26,58 +29,60 @@ class Update extends Component {
     .then((works) => {
       this.setState({works})
     })
-    .then(console.log(this.state.works))
-   
     .catch((err) => {
       console.lot(err)
     })
   }
     render() {
       let list = this.state.works.map((item) => {
-        if(item.title === this.props.match.title){
-          return(
+        return (
+          <div className="updateList">
             <>
-              <form onSubmit={this.update}>
-              <div class="ui input"><input type="text" placeholder="Enter..."/></div> 
-              </form>
-          <p>{item.title}</p>
+            <div className="entry" key={item}>
+
+            </div>
             </>
-          )
-        }else {
-          return null
-        }
+          </div>
+        )
       })//map
       return (
-        <div>
+        <>
+       
           {list}
-        </div>
-      )
+        </>
+      )//render retturn
     
   }//render
-update = (e) => {
-  e.preventDefault()
-  console.dir(e.target[0].value)
-  console.log(this.props.match.title)
-  console.log(hostURL + this.props.match.title)
-  const formData = {
-    title: document.querySelector("input").value
-  }
-  console.log(formData)
-  console.log("make it here")
 
-  const optionPUT = {
-    method: "PUT",
-    headers: {
-      Accept: "application/json",
-    },
-    body: JSON.stringify(formData)
-  };
-  fetch(hostURL +this.props.match.title, optionPUT)
-  .then((res) => res.json())
-  .then((works) => console.log(works))
-  .catch((err) => {
-    console.log(err)
-  }) 
-}
 }//class
 export default Update
+
+
+
+
+
+// update = (e) => {
+//   e.preventDefault()
+//   console.dir(e.target[0].value)
+//   console.log(this.props.match.title)
+//   console.log(hostURL + this.props.match.title)
+//   const formData = {
+//     title: document.querySelector("input").value
+//   }
+//   console.log(formData)
+//   console.log("make it here")
+
+//   const optionPUT = {
+//     method: "PUT",
+//     headers: {
+//       Accept: "application/json",
+//     },
+//     body: JSON.stringify(formData)
+//   };
+//   fetch(hostURL +this.props.match.title, optionPUT)
+//   .then((res) => res.json())
+//   .then((works) => console.log(works))
+//   .catch((err) => {
+//     console.log(err)
+//   }) 
+// }
