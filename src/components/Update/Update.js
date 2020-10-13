@@ -34,11 +34,11 @@ class Update extends Component {
     })
   }
     render() {
-      let list = this.state.works.map((item) => {
+      let list = this.state.works.map((updateitem) => {
         return (
           <div className="updateList">
             <>
-            <div className="entry" key={item}>
+            <div className="entry" key={updateitem}>
 
             </div>
             </>

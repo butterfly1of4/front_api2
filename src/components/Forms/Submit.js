@@ -3,10 +3,11 @@
 import React from 'react'
 import { Input } from 'semantic-ui-react'
 
+
 const Inputs = () => <Input placeholder='Enter...' />
 
 export default Inputs
-{<div class="ui input"><input type="text" placeholder="Enter..."/></div> }
+// {<div class="ui input"><input type="text" placeholder="Enter..."/></div> }
 
 
 

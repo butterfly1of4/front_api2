@@ -1,6 +1,8 @@
 import React, {Component} from "react"
 import App from "../../App/App"
 import {Link } from "react-router-dom"
+import Submit from "../Forms/Submit"
+import Create from "./CreateNew.css"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 
@@ -20,13 +22,22 @@ class CreateNew extends Component{
     }//constructor
     render (){
         return(
-            <div>
-                
+            <div className="createContainer">
+                <div className="formConatiner">
             <form onSubmit={this.create}>
-                <input type="text" placeholder="Create New" />
-                <input type="submit" />
-            </form>
+            <div className="ui input"><input type="text" placeholder="Title" /></div>
 
+
+            <div className="ui input"><input type="text" placeholder="Classification" /></div>
+            <div className="ui input"><input type="text" placeholder="Work URL" /></div>
+          
+            <div className="ui input"><input type="text" placeholder="Century" /></div>
+            <div className="ui input"><input type="text" placeholder="Culture" /></div>
+            <div className="ui input"><input type="text" placeholder="Medium" /></div>
+            <div className="ui input"><input type="text" placeholder="Image URL" /></div>
+            <button className="ui green button"type="submit" placeholder="Create">Create</button>
+            </form>
+                </div>
             </div>
         )
     }//render

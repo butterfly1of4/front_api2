@@ -27,39 +27,39 @@ const optionGET = {
           .catch((err) => console.log(err))
       }
       render() {
-        let list = this.state.works.map((item) => {
+        let list = this.state.works.map((allitems) => {
           return(
-            <div className="container">
+            <div className="listContainer">
               <>
-              <div className="entry" key={item}>
-             {item.title},
+              <div className="entry" key={allitems}>
+             {allitems.title},
              <br />
 
-               <span>{item.classification},
+               <span>{allitems.classification},
                </span><br />
                <span>
-                {item.url},
+                {allitems.url},
                 <br />
                 </span>
                 <span>
-                {item.century},
+                {allitems.century},
                 <br />
                 </span>
                 <span>
-                {item.culture},
+                {allitems.culture},
                 <br />
                 </span>
                 <span>
-                {item.medium},</span> 
+                {allitems.medium},</span> 
                 <br />
-                <span><a target="_blank" href="">{item.primaryimageurl}</a></span>
+                <span><a target="_blank" href="">{allitems.primaryimageurl}</a></span>
                 <hr className="entryDivider"></hr>
                 <br />
               </div>
               </>
             </div>
           )
-          console.log(item)
+          console.log(allitems)
         })
         console.log(list)
           return (

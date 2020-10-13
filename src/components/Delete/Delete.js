@@ -36,15 +36,15 @@ class Delete extends Component {
         })
     }
     render(){
-        let list= this.state.works.map((item) => {
+        let list= this.state.works.map((deleteitem) => {
             return(
-                <div className="container">
-                    <div className="title" key={item}>
-                        {item.title}
+                <div className="deleteContainer">
+                    <div className="title" key={deleteitem}>
+                        {deleteitem.title}
                     </div>
                     
                     <div className="button-class"><button className="delete ui black button" onClick={(e) => {
-                        this.remove(item.title)
+                        this.remove(deleteitem.title)
                     }}>Delete</button>{" "}
                     </div>
 
@@ -53,7 +53,7 @@ class Delete extends Component {
         })
         return (
             <React.Fragment>
-                <div className='list'>{list}</div>
+                <div className="list">{list}</div>
             </React.Fragment>
         )
     }//render
@@ -62,8 +62,8 @@ class Delete extends Component {
         .then(() => {
             console.log("removed")
             this.setState({
-                works: this.state.works.filter((item) => {
-                    return item.title !== title
+                works: this.state.works.filter((deleteitem) => {
+                    return deleteitem.title !== title
                 })
             })
         })
@@ -71,7 +71,7 @@ class Delete extends Component {
             console.log(err)
         })
     }
-    update(item){
+    update(deleteitem){
         console.log("update works")
     }
 }

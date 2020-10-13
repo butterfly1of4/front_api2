@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import App from "../../App/App";
 import { Link } from "react-router-dom";
+import ListAll from "../List/ListAll"
+import SearchForm from "../Forms/SearchForm"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 const optionGET = {
@@ -9,44 +11,48 @@ const optionGET = {
     Accept: "application/json",
   },
 };
-
+var i = ''
 class Search extends Component {
   constructor(props) {
     super(props);
     this.state = {
       works: [],
-      entry: ''
+      entry: '',
+      list: ''
     };
-   
-    this.search = this.search.bind(this)
     this.findEntry = this.findEntry.bind(this)
+    this.search = this.search.bind(this)
+  
   }
   componentWillMount() {
     fetch(hostURL, optionGET)
       .then((res) => res.json())
-      .then((works) => this.setState({ works }))
+      .then((works) => {
+          console.log(works)
+          this.setState({ works })})
       .catch((err) => {
         console.log(err);
       });
+      return this.state.works
   }
   findEntry = (e) => {
-    
-
+      e.preventDefault()
+      this.setState({
+          list: {ListAll
+     }
+    })
   }
   search = (e) => {
       e.preventDefault()
     this.setState({
-        entry: e.target.value
+        entry: document.querySelector("#searchID").value
     })
-    console.log(e.entry)
+    console.log(this.state.entry)
     console.log("me too")
+    return(this.state.entry)
   }
   render () {
-   
-      console.log(this.works)
-        console.log(this.props.works)
-    console.log(this.entry)
-    console.log(this.props.entry)
+    console.log({ListAll})
 
       return(
           <div>
@@ -55,9 +61,11 @@ class Search extends Component {
                <button className="ui yellow button" onClick={this.findEntry}>Search</button>
               </form>
               <div>{this.entry}</div>
+              <div>{this.works}</div>
+            
           </div>
        
-
+  
       )//render return
   }//render
 
