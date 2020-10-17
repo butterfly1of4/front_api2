@@ -3,6 +3,7 @@ import App from "../../App/App";
 import { Link } from "react-router-dom";
 import ListAll from "../List/ListAll"
 import SearchForm from "../Forms/SearchForm"
+import "../Search/Search.css"
 
 const hostURL = "https://rocky-hamlet-98173.herokuapp.com/record";
 const optionGET = {
@@ -55,7 +56,7 @@ class Search extends Component {
     console.log({ListAll})
 
       return(
-          <div>
+          <div className="searchPage">
               <form>
                   <input type="text" placeholder="Enter" id="searchID" onSubmit={this.search}/>
                <button className="ui yellow button" onClick={this.findEntry}>Search</button>

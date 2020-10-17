@@ -1,0 +1,14 @@
+.searchPage {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
