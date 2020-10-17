@@ -1,0 +1,11 @@
+.deleteitem {
+    display: flex;
+    flex-direction: row;
+}
+.deleteContainer {
+    display: flex;
+    flex-direction: row;
+}
+.deleteList {
+    display: flex;
+}

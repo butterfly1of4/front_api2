@@ -50,11 +50,24 @@
 .about {
   font-family: 'EB Garamond', serif;
   letter-spacing: .5px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .model{
   font-size: 16px;
 }
 ul {
   list-style: none;
+  border-bottom: black 1px solid;
+  padding-bottom: 5%;
+}
+.instructions {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo {
+  display: flex;
+  justify-self: center;
 }

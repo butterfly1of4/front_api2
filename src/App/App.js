@@ -84,6 +84,7 @@ class App extends Component {
               <li className="modelitem">Primary Image URL</li>
             </ul>
              </p>
+             <div className="instructions">Please select a button from below to begin interacting with the API: </div>
           </div>
           {/* {this.state.list} */}
             <Home />

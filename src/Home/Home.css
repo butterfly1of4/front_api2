@@ -1,16 +1,31 @@
 
 a {
     padding: 1em;
-    margin-top: 4vh;
-    margin-bottom: 4vh;
+    /* margin-top: 1vh; */
+    /* margin-bottom: 4vh; */
 }
 .buttonWrapper{
     width: 98vw;
     display: flex;
-    flex-flow: row;
+    /* flex-flow: row; */
+    flex-flow: column;
+
     justify-content: center;
+    justify-items: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 5vh;
     border-top: 2px black solid;
+    padding: 2%;
     
+}
+.homebutton{
+    display: flex;
+    justify-content: center;
+    width: 98vw;
+}
+.otherbuttons {
+    display: flex;
+    justify-content: center;
+    width: 98vw;
 }

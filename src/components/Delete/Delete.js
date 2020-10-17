@@ -38,22 +38,26 @@ class Delete extends Component {
     render(){
         let list= this.state.works.map((deleteitem) => {
             return(
+              
                 <div className="deleteContainer">
+                    <div className="deleteentry">
                     <div className="title" key={deleteitem}>
                         {deleteitem.title}
                     </div>
-                    
+                    </div>
+                    <div className="deleteentry">
                     <div className="button-class"><button className="delete ui black button" onClick={(e) => {
                         this.remove(deleteitem.title)
                     }}>Delete</button>{" "}
                     </div>
-
-                </div>
+                    </div>
+                    </div>
+                
             )
         })
         return (
             <React.Fragment>
-                <div className="list">{list}</div>
+                <div className="deleteList">{list}</div>
             </React.Fragment>
         )
     }//render

@@ -30,7 +30,7 @@ class Update extends Component {
       this.setState({works})
     })
     .catch((err) => {
-      console.lot(err)
+      console.log(err)
     })
   }
     render() {

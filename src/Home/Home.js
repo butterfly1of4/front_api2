@@ -20,6 +20,14 @@ class Home extends Component {
         return(
             <div>
                 <div className="buttonWrapper">
+                <div className="homebutton">
+                    <Switch>
+                    <Link id="navTitle" to='/'>
+                    <button className="ui purple  button">Home</button>
+          </Link>
+                    </Switch>
+                    </div>
+                    <div className="otherbuttons">
                 <Switch>
                     <Link to="/listAll">
           <button className="ui orange button">All Works</button>
@@ -48,6 +56,7 @@ class Home extends Component {
 
                     </Link>
                 </Switch>
+                </div>
                 </div>
             </div>
         )
